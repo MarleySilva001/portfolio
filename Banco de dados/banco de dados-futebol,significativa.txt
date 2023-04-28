@@ -1,0 +1,49 @@
+create TABLE estadios(
+  nome_estadio VARCHAR(25) NOT NULL,
+  endereco_pk VARCHAR(100) NOT NULL,
+  capacidade INT NOT NULL,
+ PRIMARY KEY(endereco_pk)
+  )
+  
+create TABLE equipes(
+  nome_equipe_pk VARCHAR(20) NOT NULL,
+  tecnico VARCHAR(20) NOT NULL,
+  trofeus INT,
+  endereco_estadio_fk VARCHAR(100) NOT NULL,
+  PRIMARY KEY(nome_equipe_pk),
+  FOREIGN KEY(endereco_estadio_fk) REFERENCES estadios(endereco_pk)
+  )
+  
+create TABLE jogadores(
+  numero_camisa INT NOT NULL,
+  nome_jogador_pk VARCHAR(30) NOT NULL,
+  posicao VARCHAR(15) NOT NULL,
+  equipe_fk VARCHAR(20) NOT NULL,
+  PRIMARY KEY(nome_jogador_pk),
+  FOREIGN KEY(equipe_fk) REFERENCES equipes(nome_equipe_pk)
+  )
+  
+create TABLE campeonato_futebol(
+  ano_pk INT NOT NULL,
+  equipe_vencedora_fk VARCHAR(20) NOT NULL,
+  partidas VARCHAR(50) NOT NULL,
+  arbitros VARCHAR(20) NOT NULL,
+  PRIMARY KEY(ano_pk),
+  FOREIGN KEY(equipe_vencedora_fk) REFERENCES equipes(nome_equipe_pk)
+  )
+  
+  INSERT INTO estadios (nome_estadio, endereco_pk, capacidade)
+  VALUES ('Anfield','Anfield Rd, Anfield, Liverpool L4 0TH, Reino Unido',54.000), ('Old Trafford','Sir Matt Busby Way,Trafford, Grande Manchester, Inglaterra',76.212), ('Etihad stadium','Ashton New Rd, Manchester M11 3FF, Reino Unido',53.,400), ('Emirates stadium','Hornsey Rd, London N7 7AJ, Reino Unido',60,704)
+   SELECT * FROM estadios
+  
+  INSERT INTO equipes (nome_equipe_pk, tecnico, trofeus, endereco_estadio_fk)
+  VALUES ('Liverpool','Jurgen Klopp',19,'Anfield Rd, Anfield, Liverpool L4 0TH, Reino Unido'), ('Manchester United','Erik Ten Hag',20,'Sir Matt Busby Way,Trafford, Grande Manchester, Inglaterra'), ('Arsenal','Mikel Arteta',13,'Hornsey Rd, London N7 7AJ, Reino Unido'), ('Manchester city','Pep Guardiola',8,'Ashton New Rd, Manchester M11 3FF, Reino Unido')
+   SELECT * FROM equipes
+  
+  INSERT INTO jogadores (numero_camisa, nome_jogador_pk, posicao, equipe_fk)
+  VALUES (66,'Trent Alexander-Arnold','Lateral direito','Liverpool'), (5,'Harry Maguire','Zagueiro','Manchester United'), (1,'Aaron Ramsdale','goleiro','Arsenal'), (7,'Bukayo Saka','ponta direita','Arsenal'), (9,'Erling Haaland','centroavante','Manchester city')
+   SELECT * FROM jogadores
+  
+  INSERT INTO campeonato_futebol (ano_pk, equipe_vencedora_fk, partidas, arbitros)
+  VALUES (2022,'Manchester city','LIV x MCi','Michael Oliver'), (2004,'Arsenal','ARS x MCU','Raphael Claus')
+   SELECT * FROM campeonato_futebol
