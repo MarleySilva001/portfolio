@@ -1,0 +1,190 @@
+﻿Programação
+
+
+
+
+Array-
+→ É um repositório de dados do mesmo tipo;
+→ A array tem sem nome no plural; var alunos = [ ]; 
+→ A primeira posição sempre é a zero; 
+→ O comando push serve para inserir um nome  no array:  alunos.push(“Jackson”);
+→ Só é possível adicionar um nome por vez;
+→ Para alterar um nome se usa alunos[3] = “NovoNome”;
+→ O comando alunos[3] = null deixa a terceira posição vazia.;
+→ alunos.splice(3, 2); O primeiro número serve para informar a linha e o segundo para informar quantos vão ser excluídos;
+→ var posicao = alunos.indexOf(“Jackson”); esse comando retorna a posição de Jackson;
+
+
+Escopo-
+É basicamente o lugar de onde acessamos a variável, é identificado pelo uso de “{}” nas funções e existem dois tipos.
+ local só funciona dentro do escopo.
+global pode ser acessada de qualquer lugar.
+
+
+Variáveis-
+Para que possamos trabalhar com a informação precisamos de um local, e elas podem ser de qualquer tipo
+Texto, número, array e booleano.
+Existem 3 formas de declarar var, let e const
+var Usamos para iniciar uma variável que pode ser reescrita.
+let Usamos quando nos referenciamos a um escopo específico.
+const Usada para criar variáveis mas não pode ser sobrescrita.
+
+
+
+
+Tipo de Dados 
+sting Sempre que quisermos trabalhar com texto, pode ser com aspas simples ou dupla. “Danilo Amorim” ou ‘Danilo Amorim’
+number Pode ser número inteiro ou decimal também podemos utilizar o float.
+boolean binário representado por 0 ou 1, mas em nosso caso true ou false.
+object conjunto de variáveis do mesmo tipo ou diferentes armazenados em uma única variável, eles apresentam valores.
+array é usado para armazenar um ou mais objetos e com ele podemos iterar por cada um deles.
+null indica um valor nulo.
+undefined valor indefinido.
+
+
+ Exemplos
+
+
+cost carro = {
+        cor: vermelho
+        marca: fiat
+        ano: 2020
+        }
+console.log (carro.cor)
+        vermelho
+
+
+operadores lógicas
+
+
+a == b igual
+a != b diferente
+a === b verifica se é igual inclusive o tipo de dado
+a !== b  verifica se é diferente inclusive o tipo de dado
+a < b menor do que
+a > b maior do que
+a <= b menor do que ou igual
+a>= b maior do que ou igual
+a && b se a é b são iguais
+a || b se a ou b são iguais
+! a não há
+
+
+
+
+
+
+
+
+
+
+
+
+comando for
+
+
+for ([inicialização],[condição],[expressão final])
+descrição
+
+
+for (let i=0; i<4; i++) 
+console.log(i)
+
+
+for… in
+
+
+for (variavel in obj){
+}
+
+
+var obj = { a : 1, b : 2, c : 3} 
+
+
+for (let prop in obj) {
+ console.log (“obj”,prop, “=”, obj[prop]);
+}
+
+
+for… of
+
+
+for(variavel of iteravel){
+declaração
+}
+
+
+var iteravel = [{nome : “Larissa”, admin : false},
+                           {nome : “Bruno”, admin : false},
+                           {nome : “Eduardo”, admin : false}]
+
+
+for (const valor of iteravel) {
+console.log(valor.nome)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+while
+
+
+while (condição de continuidade){
+código
+}
+
+
+do {
+código
+}
+while ( condição de continuidade)
+
+
+for each
+
+
+vetor = [1,2,3]
+function imprimeBonito(numero,i,arr){
+        console.log(`${numero} é o numero na posição ${i} do vetor ${arr}`)
+}
+vetor.forEach(imprimeBonito);
+
+
+function
+
+
+function calculo (numero) {
+        return numero * numero;
+}
+calculo (argumento)
+
+
+map
+
+
+pessoas = new map ([[1,”Maria”],[2,”Antonio”],[3,”Angelica”]]);
+function escreveNomeID(id, nome){
+        console.log(`${id} tem o id ${nome}`);
+}
+pessoas.forEach(escreveNomeID);
+
+
+Escreva uma função que recebe 2 parâmetros, O primeiro parâmetro é o elemento  que repetirá, enquanto o segundo será o número de vezes que haverá repetição.
+um array será retornado.
+ exemplo:
+repetir(“teste”,  2 ) // retornar  [“teste”, “teste”]
+repetir( 4,3 ) // retorna [4 ,4, 4]

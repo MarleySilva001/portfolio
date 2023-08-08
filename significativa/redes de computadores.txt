@@ -1,0 +1,71 @@
+﻿REDES DE COMPUTADORES
+
+
+
+
+
+
+________________
+
+
+
+
+PAN → personal area network;
+LAN → local area network;
+MAN → metropolitan area network;
+WAN → wide area network;
+
+
+________________
+
+
+
+
+Endereço IP (internet protocol) → É 
+um endereço exclusivo que identifica um dispositivo na internet.
+
+
+________________
+
+
+
+
+DHCP(dynamic host configuration protocol) → É o provedor que faz com que as máquinas  dentro de uma determinada rede possam obter o endereço IP de forma automática.
+
+
+________________
+
+
+
+
+Mac Address (media access control)
+
+
+________________
+
+
+
+
+Hostname → É o nome dado ao dispositivo, serve para identificar a máquina na rede.
+
+
+________________
+
+
+Máscara de rede → tem 32 bits como o endereço ip, tem como objetivo mascarar o ip. todo endereço ip tem uma máscara correspondente, serve para identificar qual parte do endereço e da rede e qual é do host.
+
+
+________________
+
+
+
+
+Gateway → É o equipamento que atua entre a LAN e a WAN, é uma intermediário para a troca de informações, ele coleta informações no momento em que o usuário acessa um site ou um aplicativo.
+
+
+________________
+
+
+
+
+DNS(Domain name system) →É o sistema de nomes de domínio, como uma lista eletrônica de toda a internet, é ele quem traduz o endereço ip em nomes de sites.
