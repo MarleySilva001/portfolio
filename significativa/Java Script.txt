@@ -70,16 +70,6 @@ a || b se a ou b são iguais
 ! a não há
 
 
-
-
-
-
-
-
-
-
-
-
 comando for
 
 
@@ -122,22 +112,6 @@ var iteravel = [{nome : “Larissa”, admin : false},
 for (const valor of iteravel) {
 console.log(valor.nome)
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 while
