@@ -1,0 +1,11 @@
+﻿Arpanet
+ Arpanet a primeira rede de computadores
+
+
+
+
+        Uma rede de computadores é quando um ou mais computadores estão ligados entre si, e é a partir dessa conexão que  eles trocam dados uns com os outros.
+A Arpanet (Advanced Research Project Agency Network) foi a primeira rede de computadores, ela tinha uso militar e científico e foi criada na guerra fria.
+Graças a ela em 1969 era enviado o primeiro e-mail, enviado pela Universidade da Califórnia com o destinatário sendo instituições parceiras, “Você está recebendo isso?” dizia a primeira mensagem de e-mail.
+        Paul Baran foi um nome importante no desenvolvimento técnico da Arpanet, o Polonês e sua equipe desenvolveram o Message blocks que é um sistema onde a mensagem é dividida em blocos de informações e ao chegar no destino final ela é reconstruída, inclusive a message blocks é utilizada até hoje.
+        Em 1982 a Arpanet se tornou o maior âmbito acadêmico, até que em 1990 ele foi dissolvida e chegou ao fim.

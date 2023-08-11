@@ -1,0 +1,35 @@
+﻿JavaScript
+
+
+→ORIGEM
+
+
+O JavaScript é uma linguagem de programação criada em 1995 por Brendan Eich, a pedido da empresa Netscape, ela foi criada com o objetivo de facilitar os processos dentro das páginas web.
+        Com o passar do tempo o JavaScript vai ficando mais completo e versátil, por exemplo, hoje com ele é possível criar aplicativos Desktop e mobile não só web e navegadores.
+
+
+→VANTAGENS
+
+
+* É mais fácil de aprender em relação a outras linguagens;
+* É compativel com varias plataforma e navegadores;
+* Possibilita que o site seja muito interativo, atraindo o visitante do site;
+* Não precisa de um compilador porque já é interpretado com o HTML;
+* É mais fácil de localizar e corrigir um erro;
+* Mais rápido e leve do que outras linguagens de programação;
+
+
+→DESVANTAGENS
+
+
+* É vulnerável a brecha de segurança;
+* Pode ser usado para executar códigos maliciosos;
+* Os trechos dos códigos são extensos;
+* Pode ser renderizado diferentemente em diversos dispositivos, que ocasiona inconstância;
+
+
+→FONTES
+
+
+* https://www.hostinger.com.br/tutoriais/o-que-e-javascript#
+* https://www.resilia.com.br/blog/javascript-o-que-e-como-surgiu-e-onde-utilizar/
